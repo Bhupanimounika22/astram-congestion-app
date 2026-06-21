@@ -1,12 +1,15 @@
 # 🚦 ASTRAM — Event-Driven Congestion Intelligence
 
 ASTRAM is a **Streamlit-based traffic operations intelligence app** built for **event-driven congestion prediction and operational response planning**.
+
 It combines:
 
 * **Rule-based congestion impact scoring**
 * **CatBoost models for road-closure probability and disruption duration**
 * **H3 hotspot intelligence**
 * **Operational recommendations** such as road closure planning, manpower deployment, barricading, and diversion strategy
+
+The system is designed for traffic events such as **accidents, breakdowns, construction activity, public events, waterlogging, tree fall, and other disruptions** that can affect urban traffic flow.
 
 ---
 
@@ -81,6 +84,83 @@ Example:
 
 # 🧠 Project Workflow
 
+This project follows a **3-stage pipeline**.
+
+---
+
+## **Step 1 — Feature Rebuild + Hotspot Generation**
+
+Raw traffic event data is cleaned and transformed into engineered features used for modeling and app inference.
+
+This stage also builds **H3 hotspot intelligence outputs**.
+
+### Script
+
+* `step1_rebuild_eda_h3_features.py`
+
+### Step-1 responsibilities
+
+* clean raw traffic event data
+* engineer structured features
+* derive temporal / categorical / description-based signals
+* create hotspot features using H3 spatial indexing
+* generate app-ready feature outputs
+
+### Outputs generated in Step 1
+
+Inside `rebuild_outputs/`
+
+* `step1_rebuilt_features.csv`
+* `h3_hotspot_summary.csv`
+
+---
+
+## **Step 2 — Model Training**
+
+Using the Step-1 engineered features, CatBoost models are trained for:
+
+* **Road Closure Prediction**
+* **Disruption Duration Prediction**
+
+### Script
+
+* `step2_train_strong_models.py`
+
+### Step-2 responsibilities
+
+* load Step-1 rebuilt features
+* train CatBoost classification model for closure prediction
+* train CatBoost regression model for duration prediction
+* save feature lists and categorical feature metadata
+* export deployment-ready model artifacts
+
+### Outputs generated in Step 2
+
+Inside `final_safe_model_artifacts/`
+
+* `closure_classifier_catboost.pkl`
+* `closure_feature_columns.pkl`
+* `closure_categorical_feature_names.pkl`
+* `duration_regressor_catboost.pkl`
+* `duration_feature_columns.pkl`
+* `duration_categorical_feature_names.pkl`
+
+---
+
+## **Step 3 — Streamlit App**
+
+The Streamlit app (`app.py`) loads the outputs generated in **Step 1** and **Step 2** and produces:
+
+* congestion **impact level prediction**
+* **hotspot intelligence**
+* **road closure probability**
+* **disruption duration**
+* **operational recommendations**
+
+---
+
+# 🧠 Hybrid Prediction Architecture
+
 The app uses a **hybrid architecture**:
 
 ## A) Rule-Based Impact Scoring
@@ -115,7 +195,11 @@ The outputs from the scoring system + models are combined into a final operation
 astram-congestion-app/
 ├── app.py
 ├── requirements.txt
+├── README.md
 ├── .gitignore
+│
+├── step1_rebuild_eda_h3_features.py
+├── step2_train_strong_models.py
 │
 ├── final_safe_model_artifacts/
 │   ├── closure_classifier_catboost.pkl
@@ -138,7 +222,12 @@ astram-congestion-app/
 
 * `app.py`
 
-## 2) Model artifacts folder
+## 2) Pipeline scripts
+
+* `step1_rebuild_eda_h3_features.py`
+* `step2_train_strong_models.py`
+
+## 3) Model artifacts folder
 
 `final_safe_model_artifacts/` must contain:
 
@@ -149,7 +238,7 @@ astram-congestion-app/
 * `duration_feature_columns.pkl`
 * `duration_categorical_feature_names.pkl`
 
-## 3) Data / hotspot files
+## 4) Data / hotspot files
 
 `rebuild_outputs/` must contain:
 
@@ -163,9 +252,13 @@ astram-congestion-app/
 ## Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/astram-congestion-app.git
+git clone https://github.com/Bhupanimounika22/astram-congestion-app.git
 cd astram-congestion-app
 ```
+
+Replace `YOUR_USERNAME` with your GitHub username.
+
+---
 
 ## Create virtual environment (recommended)
 
@@ -183,6 +276,8 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
+---
+
 ## Install dependencies
 
 ```bash
@@ -191,13 +286,60 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Run the App Locally
+# ▶️ How to Run the Project
+
+There are **two ways** to run this project.
+
+---
+
+# Option A — Run the app directly (if artifacts already exist)
+
+If your repository already contains:
+
+* `rebuild_outputs/step1_rebuilt_features.csv`
+* `rebuild_outputs/h3_hotspot_summary.csv`
+* `final_safe_model_artifacts/...`
+
+then you can directly run:
 
 ```bash
 streamlit run app.py
 ```
 
-After running, Streamlit will open the app in your browser.
+This is the easiest option for **demo / deployment**.
+
+---
+
+# Option B — Rebuild from scratch
+
+If you want to regenerate the full pipeline:
+
+## Step 1 — Rebuild features + hotspot outputs
+
+```bash
+python step1_rebuild_eda_h3_features.py
+```
+
+This generates:
+
+* `rebuild_outputs/step1_rebuilt_features.csv`
+* `rebuild_outputs/h3_hotspot_summary.csv`
+
+## Step 2 — Train models
+
+```bash
+python step2_train_strong_models.py
+```
+
+This generates model artifacts inside:
+
+* `final_safe_model_artifacts/`
+
+## Step 3 — Run the app
+
+```bash
+streamlit run app.py
+```
 
 ---
 
@@ -242,7 +384,7 @@ For each event, the app displays:
 
 ## Explanation Panel
 
-A “Why this prediction?” section explains the key factors that influenced the result.
+A **“Why this prediction?”** section explains the key factors that influenced the result.
 
 ---
 
@@ -256,6 +398,13 @@ Make sure your repository contains:
 * `requirements.txt`
 * `final_safe_model_artifacts/`
 * `rebuild_outputs/`
+
+If you want the repo to also support rebuilding from scratch, keep:
+
+* `step1_rebuild_eda_h3_features.py`
+* `step2_train_strong_models.py`
+
+---
 
 ## 2) Deploy on Streamlit
 
@@ -301,11 +450,25 @@ The app expects these exact paths:
 
 If you rename them, the app will fail to load files.
 
-## 2) Large files
+---
+
+## 2) Step-1 and Step-2 outputs are required for app inference
+
+`app.py` does **not** train models on the fly.
+It only **loads pre-generated outputs** from:
+
+* **Step 1** → `rebuild_outputs/`
+* **Step 2** → `final_safe_model_artifacts/`
+
+---
+
+## 3) Large files
 
 If your `.pkl` model files or `.csv` files are very large, GitHub upload may be slow or hit size limits.
 
-## 3) Streamlit deployment performance
+---
+
+## 4) Streamlit deployment performance
 
 If rendering **all hotspot cells** makes the app slow, you can switch the map to show only nearby hotspots by changing:
 
@@ -337,5 +500,3 @@ Possible next improvements for the app:
 # 👩‍💻 Author
 
 Developed as part of an **event-driven congestion prediction and traffic operations intelligence project** for Bengaluru traffic scenarios.
-
----
