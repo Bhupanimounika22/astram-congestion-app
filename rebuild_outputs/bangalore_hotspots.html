@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3db33bc5421376bc2593c419760a6a35 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3db33bc5421376bc2593c419760a6a35" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3db33bc5421376bc2593c419760a6a35 = L.map(
+                "map_3db33bc5421376bc2593c419760a6a35",
+                {
+                    center: [12.9828467, 77.58946],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_87bb6baae97a8fb09dc14c3a62551524 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_87bb6baae97a8fb09dc14c3a62551524.addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+            var polygon_ed1726d073897bcc7254c5a0b616e177 = L.polygon(
+                [[12.96809379074385, 77.70824808734868], [12.973084799260285, 77.70833393770977], [12.975596370412172, 77.70415913100915], [12.973117006137263, 77.69989874236447], [12.96812623022036, 77.69981303661072], [12.96561458597651, 77.70398757490005]],
+                {"bubblingMouseEvents": true, "color": "#fc8d59", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_de66e06b74b4d509b4469045b95b225d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5d15d4f834e524aa6f95161fac604cd7 = $(`<div id="html_5d15d4f834e524aa6f95161fac604cd7" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892e4bfffff<br>         <b>Hotspot Score:</b> 0.67<br>         <b>Hotspot Level:</b> High<br>         <b>Event Count:</b> 115<br>         <b>Avg Impact:</b> 49.43<br>         <b>Avg Duration:</b> 1446.87 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_de66e06b74b4d509b4469045b95b225d.setContent(html_5d15d4f834e524aa6f95161fac604cd7);
+            
+        
+
+        polygon_ed1726d073897bcc7254c5a0b616e177.bindPopup(popup_de66e06b74b4d509b4469045b95b225d)
+        ;
+
+        
+    
+    
+            var polygon_63126c0e96072b1357bb6c35b1b152e2 = L.polygon(
+                [[12.998448939990023, 77.59073265302257], [13.003436479802067, 77.59081649774713], [13.00594369555467, 77.58664581844647], [13.003463445585846, 77.58239156366041], [12.998476139524662, 77.58230786324795], [12.995968849679283, 77.58647827331525]],
+                {"bubblingMouseEvents": true, "color": "#fc8d59", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_6024af30d4be41a996c1c8ce834a1732 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2f0237c1178cf9950f35422ed2ed7051 = $(`<div id="html_2f0237c1178cf9950f35422ed2ed7051" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b63fffff<br>         <b>Hotspot Score:</b> 0.541<br>         <b>Hotspot Level:</b> High<br>         <b>Event Count:</b> 108<br>         <b>Avg Impact:</b> 36.53<br>         <b>Avg Duration:</b> 5593.35 min<br>         <b>Closure Rate:</b> 0.02         </div>`)[0];
+                popup_6024af30d4be41a996c1c8ce834a1732.setContent(html_2f0237c1178cf9950f35422ed2ed7051);
+            
+        
+
+        polygon_63126c0e96072b1357bb6c35b1b152e2.bindPopup(popup_6024af30d4be41a996c1c8ce834a1732)
+        ;
+
+        
+    
+    
+            var polygon_25bdee553593b2df46aaef757597ae02 = L.polygon(
+                [[12.92350621508469, 77.62317377947487], [12.928495195834795, 77.6232581594977], [12.93100543189769, 77.61908723841617], [12.9285267605768, 77.61483220620872], [12.923538013314008, 77.61474797051746], [12.92102770388258, 77.61891862270787]],
+                {"bubblingMouseEvents": true, "color": "#fc8d59", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_adacabc877fae7c43b1fb02fa5948300 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e1d4e9604ccde23696772b7a18c3a591 = $(`<div id="html_e1d4e9604ccde23696772b7a18c3a591" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925c1fffff<br>         <b>Hotspot Score:</b> 0.533<br>         <b>Hotspot Level:</b> High<br>         <b>Event Count:</b> 116<br>         <b>Avg Impact:</b> 31.92<br>         <b>Avg Duration:</b> 13250.41 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_adacabc877fae7c43b1fb02fa5948300.setContent(html_e1d4e9604ccde23696772b7a18c3a591);
+            
+        
+
+        polygon_25bdee553593b2df46aaef757597ae02.bindPopup(popup_adacabc877fae7c43b1fb02fa5948300)
+        ;
+
+        
+    
+    
+            var polygon_e4dca82bdcc5fecf1b13c6dcec920bdd = L.polygon(
+                [[13.028524327917488, 77.54069378802069], [13.033510256808622, 77.54077678381023], [13.036015142335277, 77.53660763962702], [13.033534173602446, 77.53235576927071], [13.028548478935797, 77.53227291768263], [13.026043518775353, 77.5364417922552]],
+                {"bubblingMouseEvents": true, "color": "#fc8d59", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a42723ee7a7578a346128ca3598620d4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_197bb71a494f9cdc50a8a91f04965bb6 = $(`<div id="html_197bb71a494f9cdc50a8a91f04965bb6" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145957fffff<br>         <b>Hotspot Score:</b> 0.517<br>         <b>Hotspot Level:</b> High<br>         <b>Event Count:</b> 97<br>         <b>Avg Impact:</b> 37.82<br>         <b>Avg Duration:</b> 463.51 min<br>         <b>Closure Rate:</b> 0.04         </div>`)[0];
+                popup_a42723ee7a7578a346128ca3598620d4.setContent(html_197bb71a494f9cdc50a8a91f04965bb6);
+            
+        
+
+        polygon_e4dca82bdcc5fecf1b13c6dcec920bdd.bindPopup(popup_a42723ee7a7578a346128ca3598620d4)
+        ;
+
+        
+    
+    
+            var polygon_2df07e4fcb5c18507f9ba6adffda15e2 = L.polygon(
+                [[12.998337399998205, 77.62443977505798], [13.003325873972518, 77.62452419726364], [13.005834105535552, 77.62035221443126], [13.00335393698562, 77.61609607841243], [12.998365696425644, 77.61601180061193], [12.995857390999006, 77.62018351443085]],
+                {"bubblingMouseEvents": true, "color": "#fc8d59", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc8d59", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_c61f4452d04e4a57a945e8294d0d78d2 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ddc74c08b0ece51e03e4c39ee8bcb5a0 = $(`<div id="html_ddc74c08b0ece51e03e4c39ee8bcb5a0" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892eb9fffff<br>         <b>Hotspot Score:</b> 0.512<br>         <b>Hotspot Level:</b> High<br>         <b>Event Count:</b> 13<br>         <b>Avg Impact:</b> 40.69<br>         <b>Avg Duration:</b> 245224.92 min<br>         <b>Closure Rate:</b> 0.31         </div>`)[0];
+                popup_c61f4452d04e4a57a945e8294d0d78d2.setContent(html_ddc74c08b0ece51e03e4c39ee8bcb5a0);
+            
+        
+
+        polygon_2df07e4fcb5c18507f9ba6adffda15e2.bindPopup(popup_c61f4452d04e4a57a945e8294d0d78d2)
+        ;
+
+        
+    
+    
+            var polygon_61ee8f9581f89f35ef0fc274111a7b21 = L.polygon(
+                [[13.035736737134915, 77.62928783739143], [13.040725068023564, 77.62937235293006], [13.043232421487609, 77.62519967620004], [13.040751518142583, 77.62094275298426], [13.035763420588733, 77.62085838189924], [13.033255993042866, 77.62503078958214]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_7b56843c2b800c811a7ae47643241a1b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_22a92fe8fd3dda8b19ab8e018d2ae9e5 = $(`<div id="html_22a92fe8fd3dda8b19ab8e018d2ae9e5" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892cc5fffff<br>         <b>Hotspot Score:</b> 0.489<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 93<br>         <b>Avg Impact:</b> 34.88<br>         <b>Avg Duration:</b> 7631.85 min<br>         <b>Closure Rate:</b> 0.08         </div>`)[0];
+                popup_7b56843c2b800c811a7ae47643241a1b.setContent(html_22a92fe8fd3dda8b19ab8e018d2ae9e5);
+            
+        
+
+        polygon_61ee8f9581f89f35ef0fc274111a7b21.bindPopup(popup_7b56843c2b800c811a7ae47643241a1b)
+        ;
+
+        
+    
+    
+            var polygon_949c539bdafaf01c4b32ac1bd7f5ab06 = L.polygon(
+                [[12.961055814115138, 77.58589195326586], [12.966043492403111, 77.58597570490164], [12.968551585752207, 77.58180571932974], [12.966072074685142, 77.57755225132728], [12.96108463022687, 77.57746864395514], [12.958576463003753, 77.5816383603276]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_9f4086887f1a36156214505d58e951c3 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_43707a442dd9d7177169957ca146e2fe = $(`<div id="html_43707a442dd9d7177169957ca146e2fe" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925b7fffff<br>         <b>Hotspot Score:</b> 0.481<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 84<br>         <b>Avg Impact:</b> 35.99<br>         <b>Avg Duration:</b> 3604.38 min<br>         <b>Closure Rate:</b> 0.2         </div>`)[0];
+                popup_9f4086887f1a36156214505d58e951c3.setContent(html_43707a442dd9d7177169957ca146e2fe);
+            
+        
+
+        polygon_949c539bdafaf01c4b32ac1bd7f5ab06.bindPopup(popup_9f4086887f1a36156214505d58e951c3)
+        ;
+
+        
+    
+    
+            var polygon_3d3689cbe30ed36831db8a6b115e61e0 = L.polygon(
+                [[12.983457940425609, 77.59890628895279], [12.988445816571017, 77.59899026961779], [12.990953688172837, 77.59481947653852], [12.988473757563618, 77.59056497195395], [12.983486115099781, 77.59048113560961], [12.98097816956136, 77.59465165953496]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_cf9e97ee71167a38b6de5b6f02486739 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_aabc087bbb78eb4bd7f37e762416d4ee = $(`<div id="html_aabc087bbb78eb4bd7f37e762416d4ee" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b45fffff<br>         <b>Hotspot Score:</b> 0.477<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 86<br>         <b>Avg Impact:</b> 35.05<br>         <b>Avg Duration:</b> 19370.57 min<br>         <b>Closure Rate:</b> 0.06         </div>`)[0];
+                popup_cf9e97ee71167a38b6de5b6f02486739.setContent(html_aabc087bbb78eb4bd7f37e762416d4ee);
+            
+        
+
+        polygon_3d3689cbe30ed36831db8a6b115e61e0.bindPopup(popup_cf9e97ee71167a38b6de5b6f02486739)
+        ;
+
+        
+    
+    
+            var polygon_f65b71a5a0bc16814603fe78be24e121 = L.polygon(
+                [[13.013411456247432, 77.59098419557743], [13.018398892730255, 77.59106804868347], [13.020905706157452, 77.58689715707845], [13.018425157291258, 77.58264268163104], [13.013437954544376, 77.58255897285183], [13.010931066925547, 77.58672959519899]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_b92e5aea35fd7c222c607e8385cc0f4f = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0c5c3fb9f27ec72400fd07d0eacaa7dd = $(`<div id="html_0c5c3fb9f27ec72400fd07d0eacaa7dd" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b2dfffff<br>         <b>Hotspot Score:</b> 0.476<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 87<br>         <b>Avg Impact:</b> 36.26<br>         <b>Avg Duration:</b> 2720.52 min<br>         <b>Closure Rate:</b> 0.05         </div>`)[0];
+                popup_b92e5aea35fd7c222c607e8385cc0f4f.setContent(html_0c5c3fb9f27ec72400fd07d0eacaa7dd);
+            
+        
+
+        polygon_f65b71a5a0bc16814603fe78be24e121.bindPopup(popup_b92e5aea35fd7c222c607e8385cc0f4f)
+        ;
+
+        
+    
+    
+            var polygon_ff897d7910b76637b4bb8540593a6bc8 = L.polygon(
+                [[13.036062193308021, 77.51976706335715], [13.041047484287821, 77.51984970281626], [13.043551532307578, 77.51568127059645], [13.04107036417153, 77.5114304686825], [13.03608530761799, 77.5113479733737], [13.033581184772135, 77.51551613583436]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_f0407e06369ce05e5a379d9960753018 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_08f8bb16e4d7ad27783ee28eab8e6fa4 = $(`<div id="html_08f8bb16e4d7ad27783ee28eab8e6fa4" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145913fffff<br>         <b>Hotspot Score:</b> 0.462<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 82<br>         <b>Avg Impact:</b> 37.05<br>         <b>Avg Duration:</b> 284.45 min<br>         <b>Closure Rate:</b> 0.01         </div>`)[0];
+                popup_f0407e06369ce05e5a379d9960753018.setContent(html_08f8bb16e4d7ad27783ee28eab8e6fa4);
+            
+        
+
+        polygon_ff897d7910b76637b4bb8540593a6bc8.bindPopup(popup_f0407e06369ce05e5a379d9960753018)
+        ;
+
+        
+    
+    
+            var polygon_56273dac13c1dc1e00d5a8b4f4c02979 = L.polygon(
+                [[12.95370333309805, 77.54786868863987], [12.958690009018209, 77.5479517871208], [12.961197161771546, 77.54378337669404], [12.958717712684523, 77.53953213722544], [12.953731270979128, 77.53944918289586], [12.95122404414383, 77.54361732388935]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_79a543b42b2e0bbdf86107a07ecc778d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c33b553eb9dfb94a56aa74d1d8c76b32 = $(`<div id="html_c33b553eb9dfb94a56aa74d1d8c76b32" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145a2bfffff<br>         <b>Hotspot Score:</b> 0.458<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 79<br>         <b>Avg Impact:</b> 37.29<br>         <b>Avg Duration:</b> 3272.45 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_79a543b42b2e0bbdf86107a07ecc778d.setContent(html_c33b553eb9dfb94a56aa74d1d8c76b32);
+            
+        
+
+        polygon_56273dac13c1dc1e00d5a8b4f4c02979.bindPopup(popup_79a543b42b2e0bbdf86107a07ecc778d)
+        ;
+
+        
+    
+    
+            var polygon_007d0ea2963bce1dfddc8947bea126ad = L.polygon(
+                [[12.953675122241501, 77.5562889919736], [12.958662032292526, 77.55637223462924], [12.961169438669595, 77.5522034975106], [12.958690009018209, 77.5479517871208], [12.95370333309805, 77.54786868863987], [12.951195852696245, 77.55203715637984]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_c3d1cd93ad29f6435974eb0ab4f131e5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a9a33701524d3d40edefd6e5be606d40 = $(`<div id="html_a9a33701524d3d40edefd6e5be606d40" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145a29fffff<br>         <b>Hotspot Score:</b> 0.453<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 79<br>         <b>Avg Impact:</b> 36.57<br>         <b>Avg Duration:</b> 1034.39 min<br>         <b>Closure Rate:</b> 0.05         </div>`)[0];
+                popup_c3d1cd93ad29f6435974eb0ab4f131e5.setContent(html_a9a33701524d3d40edefd6e5be606d40);
+            
+        
+
+        polygon_007d0ea2963bce1dfddc8947bea126ad.bindPopup(popup_c3d1cd93ad29f6435974eb0ab4f131e5)
+        ;
+
+        
+    
+    
+            var polygon_2915e5709afa4d16564db07f39b202bc = L.polygon(
+                [[12.990981375325301, 77.58639450493625], [12.995968849679283, 77.58647827331525], [12.998476139524662, 77.58230786324795], [12.995996029085841, 77.5780539540559], [12.991008788532142, 77.57797032996996], [12.988501424614784, 77.58214047078879]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_1417adb669fdff8594fb10c8e0f43ddc = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_7bc4dfdef10eb7374b4646828561eb74 = $(`<div id="html_7bc4dfdef10eb7374b4646828561eb74" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b0dfffff<br>         <b>Hotspot Score:</b> 0.434<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 67<br>         <b>Avg Impact:</b> 37.88<br>         <b>Avg Duration:</b> 2723.43 min<br>         <b>Closure Rate:</b> 0.1         </div>`)[0];
+                popup_1417adb669fdff8594fb10c8e0f43ddc.setContent(html_7bc4dfdef10eb7374b4646828561eb74);
+            
+        
+
+        polygon_2915e5709afa4d16564db07f39b202bc.bindPopup(popup_1417adb669fdff8594fb10c8e0f43ddc)
+        ;
+
+        
+    
+    
+            var polygon_c6af17e88264a2b9560cd5e08a10f3fe = L.polygon(
+                [[12.916006505152799, 77.62726030914483], [12.92099565236382, 77.62734475712193], [12.92350621508469, 77.62317377947487], [12.92102770388258, 77.61891862270787], [12.916038790123904, 77.61883431906658], [12.913528154112772, 77.62300502786228]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_66b532438f447f6f5792de5c81776c64 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e263eb3da21f649762bfa53783874e92 = $(`<div id="html_e263eb3da21f649762bfa53783874e92" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925c9fffff<br>         <b>Hotspot Score:</b> 0.432<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 63<br>         <b>Avg Impact:</b> 37.87<br>         <b>Avg Duration:</b> 19660.4 min<br>         <b>Closure Rate:</b> 0.06         </div>`)[0];
+                popup_66b532438f447f6f5792de5c81776c64.setContent(html_e263eb3da21f649762bfa53783874e92);
+            
+        
+
+        polygon_c6af17e88264a2b9560cd5e08a10f3fe.bindPopup(popup_66b532438f447f6f5792de5c81776c64)
+        ;
+
+        
+    
+    
+            var polygon_7d1c3ea1fa2ee891e48b15ff824d418a = L.polygon(
+                [[12.97596169707093, 77.60299309022386], [12.980949741108523, 77.60307713885724], [12.983457940425609, 77.59890628895279], [12.98097816956136, 77.59465165953496], [12.975990359170659, 77.5945677552265], [12.973482085995094, 77.59873833601672]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_e1db02a47236143688ed32635a877314 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_01a85a801279f020c7cff960b421c80f = $(`<div id="html_01a85a801279f020c7cff960b421c80f" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b4dfffff<br>         <b>Hotspot Score:</b> 0.419<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 64<br>         <b>Avg Impact:</b> 36.78<br>         <b>Avg Duration:</b> 10140.24 min<br>         <b>Closure Rate:</b> 0.08         </div>`)[0];
+                popup_e1db02a47236143688ed32635a877314.setContent(html_01a85a801279f020c7cff960b421c80f);
+            
+        
+
+        polygon_7d1c3ea1fa2ee891e48b15ff824d418a.bindPopup(popup_e1db02a47236143688ed32635a877314)
+        ;
+
+        
+    
+    
+            var polygon_19ebec2117ec266112044e62b32da50a = L.polygon(
+                [[13.020905706157452, 77.58689715707845], [13.025892973867967, 77.5869809422057], [13.02839945894398, 77.58281010755722], [13.02591875057694, 77.57855575708483], [13.020931716636904, 77.5784721162801], [13.018425157291258, 77.58264268163104]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_f6144f5379b10ffa143243a8680a10b3 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_cc0c553cb8753fe55562e2e02733f803 = $(`<div id="html_cc0c553cb8753fe55562e2e02733f803" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b25fffff<br>         <b>Hotspot Score:</b> 0.417<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 72<br>         <b>Avg Impact:</b> 34.68<br>         <b>Avg Duration:</b> 3294.4 min<br>         <b>Closure Rate:</b> 0.04         </div>`)[0];
+                popup_f6144f5379b10ffa143243a8680a10b3.setContent(html_cc0c553cb8753fe55562e2e02733f803);
+            
+        
+
+        polygon_19ebec2117ec266112044e62b32da50a.bindPopup(popup_f6144f5379b10ffa143243a8680a10b3)
+        ;
+
+        
+    
+    
+            var polygon_133056a6ad04bb7b4aa60cf95f576c26 = L.polygon(
+                [[12.961026724562126, 77.59431605907282], [12.966014636595762, 77.59439995499558], [12.968522983608956, 77.5902296433348], [12.966043492403111, 77.58597570490164], [12.961055814115138, 77.58589195326586], [12.958547393285153, 77.59006199578202]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_f2492150edc9d10a8f59c9a7d63f6f9a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_3b54d157299f334563ddcdc78f633b8a = $(`<div id="html_3b54d157299f334563ddcdc78f633b8a" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925b5fffff<br>         <b>Hotspot Score:</b> 0.416<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 80<br>         <b>Avg Impact:</b> 30.99<br>         <b>Avg Duration:</b> 2378.96 min<br>         <b>Closure Rate:</b> 0.11         </div>`)[0];
+                popup_f2492150edc9d10a8f59c9a7d63f6f9a.setContent(html_3b54d157299f334563ddcdc78f633b8a);
+            
+        
+
+        polygon_133056a6ad04bb7b4aa60cf95f576c26.bindPopup(popup_f2492150edc9d10a8f59c9a7d63f6f9a)
+        ;
+
+        
+    
+    
+            var polygon_30153ec899574db554b42a6dfb3e50b0 = L.polygon(
+                [[12.945971774034726, 77.61934018304518], [12.950960487809535, 77.61942450353983], [12.953469996590405, 77.61525342676237], [12.950990865140145, 77.61099829845135], [12.946002384873113, 77.61091412229874], [12.943492802546366, 77.61508493012087]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_4989374da5a35b2995acc0d50330130a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_9cc4fb1e81b5d0b5d9e85f7f2f37118d = $(`<div id="html_9cc4fb1e81b5d0b5d9e85f7f2f37118d" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925e3fffff<br>         <b>Hotspot Score:</b> 0.414<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 44.0<br>         <b>Avg Duration:</b> 50407.82 min<br>         <b>Closure Rate:</b> 1.0         </div>`)[0];
+                popup_4989374da5a35b2995acc0d50330130a.setContent(html_9cc4fb1e81b5d0b5d9e85f7f2f37118d);
+            
+        
+
+        polygon_30153ec899574db554b42a6dfb3e50b0.bindPopup(popup_4989374da5a35b2995acc0d50330130a)
+        ;
+
+        
+    
+    
+            var polygon_4234c9a582520431ccc638d536bc1ce0 = L.polygon(
+                [[13.035841821216845, 77.59557479146218], [13.040829218261155, 77.59565872932593], [13.043335554735718, 77.59148735612794], [13.040854568474817, 77.58723231433912], [13.035867405101886, 77.5871485208359], [13.033360994316253, 77.59131962476673]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_0c8ca0b5082359f1b208e302183fb49f = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b7f6de0be87b975f6b9277abb9f6542e = $(`<div id="html_b7f6de0be87b975f6b9277abb9f6542e" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892c9dfffff<br>         <b>Hotspot Score:</b> 0.414<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 66<br>         <b>Avg Impact:</b> 36.02<br>         <b>Avg Duration:</b> 5827.32 min<br>         <b>Closure Rate:</b> 0.06         </div>`)[0];
+                popup_0c8ca0b5082359f1b208e302183fb49f.setContent(html_b7f6de0be87b975f6b9277abb9f6542e);
+            
+        
+
+        polygon_4234c9a582520431ccc638d536bc1ce0.bindPopup(popup_0c8ca0b5082359f1b208e302183fb49f)
+        ;
+
+        
+    
+    
+            var polygon_656bda07e30e5f9d3a3ea36e03cb7b0d = L.polygon(
+                [[12.916462150471256, 77.50095407674817], [12.921447787071157, 77.5010363621328], [12.923954549985629, 77.4968702807346], [12.921475750446278, 77.49262218362863], [12.916490348557861, 77.49254004223002], [12.913983511495212, 77.49670585395721]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_604717623492077577c81dc54965eb49 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_1ee4869065147b65d9d91f86b9e47aaa = $(`<div id="html_1ee4869065147b65d9d91f86b9e47aaa" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145acbfffff<br>         <b>Hotspot Score:</b> 0.407<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 48.0<br>         <b>Avg Duration:</b> 0.0 min<br>         <b>Closure Rate:</b> 1.0         </div>`)[0];
+                popup_604717623492077577c81dc54965eb49.setContent(html_1ee4869065147b65d9d91f86b9e47aaa);
+            
+        
+
+        polygon_656bda07e30e5f9d3a3ea36e03cb7b0d.bindPopup(popup_604717623492077577c81dc54965eb49)
+        ;
+
+        
+    
+    
+            var polygon_3870204789e35ab5673b43df03153ff0 = L.polygon(
+                [[13.095665207556358, 77.60501103062232], [13.100652413945115, 77.60509514650421], [13.103157391028514, 77.6009225974906], [13.100675236368986, 77.5966662019112], [13.095688263506434, 77.59658223047205], [13.093183211774988, 77.60075451017535]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_bc8173050dbb3af58c9ff8f9b327c2e5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_409d732fb4aabcfab7ddd4aa720d7602 = $(`<div id="html_409d732fb4aabcfab7ddd4aa720d7602" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860169669fffff<br>         <b>Hotspot Score:</b> 0.401<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 50<br>         <b>Avg Impact:</b> 39.7<br>         <b>Avg Duration:</b> 6525.87 min<br>         <b>Closure Rate:</b> 0.1         </div>`)[0];
+                popup_bc8173050dbb3af58c9ff8f9b327c2e5.setContent(html_409d732fb4aabcfab7ddd4aa720d7602);
+            
+        
+
+        polygon_3870204789e35ab5673b43df03153ff0.bindPopup(popup_bc8173050dbb3af58c9ff8f9b327c2e5)
+        ;
+
+        
+    
+    
+            var polygon_a2fe8620ba2b0a2475def3470a013df4 = L.polygon(
+                [[12.916134007427745, 77.59356112152417], [12.921122220324035, 77.59364499229737], [12.923631769859837, 77.58947531730163], [12.921153180016532, 77.58522204060961], [12.916165200909301, 77.58513831407926], [12.91365557785411, 77.58930772000387]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_329475f039c7935bc1a9cd3a54e4a74b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b5084ca2decc1d3ca0031521e72add08 = $(`<div id="html_b5084ca2decc1d3ca0031521e72add08" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925d3fffff<br>         <b>Hotspot Score:</b> 0.398<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 83<br>         <b>Avg Impact:</b> 28.49<br>         <b>Avg Duration:</b> 2311.36 min<br>         <b>Closure Rate:</b> 0.06         </div>`)[0];
+                popup_329475f039c7935bc1a9cd3a54e4a74b.setContent(html_b5084ca2decc1d3ca0031521e72add08);
+            
+        
+
+        polygon_a2fe8620ba2b0a2475def3470a013df4.bindPopup(popup_329475f039c7935bc1a9cd3a54e4a74b)
+        ;
+
+        
+    
+    
+            var polygon_43e1cdbbd97fb50665796bd136ecb61d = L.polygon(
+                [[13.035682544904745, 77.64614913488245], [13.040671342210215, 77.64623393939796], [13.043179204144492, 77.64206061172821], [13.040698342738118, 77.63780274848544], [13.035709778598912, 77.63771808846998], [13.033201842697524, 77.64189114720297]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_ff2e3937feb6369d5ea3196b73281c3b = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_381b1049bd2986ca3161f2ef2d8b823f = $(`<div id="html_381b1049bd2986ca3161f2ef2d8b823f" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892c11fffff<br>         <b>Hotspot Score:</b> 0.392<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 30<br>         <b>Avg Impact:</b> 45.5<br>         <b>Avg Duration:</b> 9923.91 min<br>         <b>Closure Rate:</b> 0.1         </div>`)[0];
+                popup_ff2e3937feb6369d5ea3196b73281c3b.setContent(html_381b1049bd2986ca3161f2ef2d8b823f);
+            
+        
+
+        polygon_43e1cdbbd97fb50665796bd136ecb61d.bindPopup(popup_ff2e3937feb6369d5ea3196b73281c3b)
+        ;
+
+        
+    
+    
+            var polygon_18ae7bfba3df79eb7f1cf0e46fc3619d = L.polygon(
+                [[13.028373661839918, 77.59123576327796], [13.033360994316253, 77.59131962476673], [13.035867405101886, 77.5871485208359], [13.033386557699371, 77.58289382470446], [13.02839945894398, 77.58281010755722], [13.025892973867967, 77.5869809422057]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_335e4979a8eac90777ad3f8a9cd6a0ae = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_3d6cb941ada52ff3372afa1eac26eb94 = $(`<div id="html_3d6cb941ada52ff3372afa1eac26eb94" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892c99fffff<br>         <b>Hotspot Score:</b> 0.392<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 52<br>         <b>Avg Impact:</b> 39.02<br>         <b>Avg Duration:</b> 2545.47 min<br>         <b>Closure Rate:</b> 0.04         </div>`)[0];
+                popup_335e4979a8eac90777ad3f8a9cd6a0ae.setContent(html_3d6cb941ada52ff3372afa1eac26eb94);
+            
+        
+
+        polygon_18ae7bfba3df79eb7f1cf0e46fc3619d.bindPopup(popup_335e4979a8eac90777ad3f8a9cd6a0ae)
+        ;
+
+        
+    
+    
+            var polygon_1a3445a7cd9570d2d79df55a6d862ad9 = L.polygon(
+                [[13.08819606851986, 77.60067047071945], [13.093183211774988, 77.60075451017535], [13.095688263506434, 77.59658223047205], [13.093206246608007, 77.59232618064418], [13.08821933692885, 77.59224228561199], [13.085714210569925, 77.59641429598975]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_ba39b18c333600ad2ddf2975b58ddc08 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_cc6a0fffa0aaaab49a3f78dede4f89e5 = $(`<div id="html_cc6a0fffa0aaaab49a3f78dede4f89e5" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860169645fffff<br>         <b>Hotspot Score:</b> 0.391<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 52<br>         <b>Avg Impact:</b> 38.67<br>         <b>Avg Duration:</b> 8156.34 min<br>         <b>Closure Rate:</b> 0.02         </div>`)[0];
+                popup_ba39b18c333600ad2ddf2975b58ddc08.setContent(html_cc6a0fffa0aaaab49a3f78dede4f89e5);
+            
+        
+
+        polygon_1a3445a7cd9570d2d79df55a6d862ad9.bindPopup(popup_ba39b18c333600ad2ddf2975b58ddc08)
+        ;
+
+        
+    
+    
+            var polygon_c4c896190b8c4e9812eb4ce898a0554c = L.polygon(
+                [[12.983283137141932, 77.64947392090166], [12.988272413608998, 77.64955876797887], [12.99078180816209, 77.64538602141837], [12.988301999838573, 77.64112869660994], [12.983312956547762, 77.64104399399281], [12.980803488401959, 77.64521647172977]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_dea825d9799f45d5469b76af1fd2319c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_228ca09f55deea5e81fa81b11b42fdd7 = $(`<div id="html_228ca09f55deea5e81fa81b11b42fdd7" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892ec7fffff<br>         <b>Hotspot Score:</b> 0.389<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 54<br>         <b>Avg Impact:</b> 37.85<br>         <b>Avg Duration:</b> 45.31 min<br>         <b>Closure Rate:</b> 0.07         </div>`)[0];
+                popup_dea825d9799f45d5469b76af1fd2319c.setContent(html_228ca09f55deea5e81fa81b11b42fdd7);
+            
+        
+
+        polygon_c4c896190b8c4e9812eb4ce898a0554c.bindPopup(popup_dea825d9799f45d5469b76af1fd2319c)
+        ;
+
+        
+    
+    
+            var polygon_f8a0c4eead995d70c515a4df65e0b390 = L.polygon(
+                [[13.043434290125758, 77.55778778413058], [13.04842058259101, 77.55787107671829], [13.050925573121662, 77.55370106650079], [13.048444345802988, 77.54944803322739], [13.043458287379426, 77.54936488490259], [13.04095322223067, 77.5535346255941]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_b7fd54ac5c7eb8f86cda303500a14170 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b44a70257893209a0c12eb212e82b1e5 = $(`<div id="html_b44a70257893209a0c12eb212e82b1e5" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 886014590dfffff<br>         <b>Hotspot Score:</b> 0.388<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 62<br>         <b>Avg Impact:</b> 35.19<br>         <b>Avg Duration:</b> 928.47 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_b7fd54ac5c7eb8f86cda303500a14170.setContent(html_b44a70257893209a0c12eb212e82b1e5);
+            
+        
+
+        polygon_f8a0c4eead995d70c515a4df65e0b390.bindPopup(popup_b7fd54ac5c7eb8f86cda303500a14170)
+        ;
+
+        
+    
+    
+            var polygon_f88b7afb3cad74a19f2ede79702ca604 = L.polygon(
+                [[13.013515804023957, 77.55728808687829], [13.018502305058982, 77.557371362817], [13.021008102136085, 77.55320177705151], [13.018527472596565, 77.54894918483], [13.01354120563334, 77.5488660531248], [13.011035334135642, 77.55303536941341]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a764abc9e9fd9a7c9be21898fd5a65a8 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_aa551fdb783c29121243c7e725b4bb2f = $(`<div id="html_aa551fdb783c29121243c7e725b4bb2f" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b37fffff<br>         <b>Hotspot Score:</b> 0.384<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 56<br>         <b>Avg Impact:</b> 36.98<br>         <b>Avg Duration:</b> 2343.88 min<br>         <b>Closure Rate:</b> 0.02         </div>`)[0];
+                popup_a764abc9e9fd9a7c9be21898fd5a65a8.setContent(html_aa551fdb783c29121243c7e725b4bb2f);
+            
+        
+
+        polygon_f88b7afb3cad74a19f2ede79702ca604.bindPopup(popup_a764abc9e9fd9a7c9be21898fd5a65a8)
+        ;
+
+        
+    
+    
+            var polygon_e198bb817bb2e177d369f4408f781498 = L.polygon(
+                [[12.908506302425666, 77.63134682738456], [12.91349561591415, 77.63143134331467], [12.916006505152799, 77.62726030914483], [12.913528154112772, 77.62300502786228], [12.908539074041682, 77.62292065627224], [12.906028111591015, 77.62709142163045]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_864d1a834cd558c6d4e4a7adf56d9728 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_fed9c447866bf29617b8e7a6ba4b61a2 = $(`<div id="html_fed9c447866bf29617b8e7a6ba4b61a2" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892423fffff<br>         <b>Hotspot Score:</b> 0.381<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 57<br>         <b>Avg Impact:</b> 36.23<br>         <b>Avg Duration:</b> 460.52 min<br>         <b>Closure Rate:</b> 0.04         </div>`)[0];
+                popup_864d1a834cd558c6d4e4a7adf56d9728.setContent(html_fed9c447866bf29617b8e7a6ba4b61a2);
+            
+        
+
+        polygon_e198bb817bb2e177d369f4408f781498.bindPopup(popup_864d1a834cd558c6d4e4a7adf56d9728)
+        ;
+
+        
+    
+    
+            var polygon_360c2f16f609478bebe2bd315acd12bd = L.polygon(
+                [[13.00594369555467, 77.58664581844647], [13.010931066925547, 77.58672959519899], [13.013437954544376, 77.58255897285183], [13.010957544960945, 77.57830484303095], [13.005970407375486, 77.57822121058625], [13.003463445585846, 77.58239156366041]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_0701694cf852e4181361647fc1f30a12 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ae066ff54907cd4c238705377e456809 = $(`<div id="html_ae066ff54907cd4c238705377e456809" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b29fffff<br>         <b>Hotspot Score:</b> 0.381<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 53<br>         <b>Avg Impact:</b> 36.62<br>         <b>Avg Duration:</b> 8140.45 min<br>         <b>Closure Rate:</b> 0.06         </div>`)[0];
+                popup_0701694cf852e4181361647fc1f30a12.setContent(html_ae066ff54907cd4c238705377e456809);
+            
+        
+
+        polygon_360c2f16f609478bebe2bd315acd12bd.bindPopup(popup_0701694cf852e4181361647fc1f30a12)
+        ;
+
+        
+    
+    
+            var polygon_a4cbd04dd66d6aa4ab0b36da7dae3681 = L.polygon(
+                [[13.035966994383323, 77.55345140929981], [13.04095322223067, 77.5535346255941], [13.043458287379426, 77.54936488490259], [13.04097719927601, 77.54511219746364], [13.035991205519833, 77.54502912541321], [13.03348606577373, 77.54919859656368]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_2f008b3061ecbb1efc03d52805a916fb = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ed9af6320466d8c0147635904a29bf4a = $(`<div id="html_ed9af6320466d8c0147635904a29bf4a" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145909fffff<br>         <b>Hotspot Score:</b> 0.378<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 52<br>         <b>Avg Impact:</b> 37.02<br>         <b>Avg Duration:</b> 6637.67 min<br>         <b>Closure Rate:</b> 0.04         </div>`)[0];
+                popup_2f008b3061ecbb1efc03d52805a916fb.setContent(html_ed9af6320466d8c0147635904a29bf4a);
+            
+        
+
+        polygon_a4cbd04dd66d6aa4ab0b36da7dae3681.bindPopup(popup_2f008b3061ecbb1efc03d52805a916fb)
+        ;
+
+        
+    
+    
+            var polygon_cc4207ccc274516530f37140415ae059 = L.polygon(
+                [[12.855768337957812, 77.7105334067825], [12.860760207500377, 77.71061926505253], [12.86327489508118, 77.70644589054086], [12.86079778543657, 77.70218692596572], [12.855806148558125, 77.70210121220403], [12.853291388657855, 77.70627431851489]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_e5e915d3928219ed0bd9db0dc4b2fea5 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_604c779e572fe123e1c1a04b31a49c4e = $(`<div id="html_604c779e572fe123e1c1a04b31a49c4e" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618935b5fffff<br>         <b>Hotspot Score:</b> 0.377<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 44.0<br>         <b>Avg Duration:</b> 5111.97 min<br>         <b>Closure Rate:</b> 1.0         </div>`)[0];
+                popup_e5e915d3928219ed0bd9db0dc4b2fea5.setContent(html_604c779e572fe123e1c1a04b31a49c4e);
+            
+        
+
+        polygon_cc4207ccc274516530f37140415ae059.bindPopup(popup_e5e915d3928219ed0bd9db0dc4b2fea5)
+        ;
+
+        
+    
+    
+            var polygon_74b8c4a6f84fa53658d20607e25f0230 = L.polygon(
+                [[12.878535287266821, 77.63926589082949], [12.883525030752148, 77.63935053420222], [12.886036971679564, 77.63517959941301], [12.883559242075577, 77.63092428996445], [12.878569731951679, 77.63083979092558], [12.876057718068122, 77.63501045700713]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_3acacfcf2c238a260bef561948561998 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_4480fcc7dc07103c991d47672ca41067 = $(`<div id="html_4480fcc7dc07103c991d47672ca41067" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892409fffff<br>         <b>Hotspot Score:</b> 0.375<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 44.0<br>         <b>Avg Duration:</b> 2375.28 min<br>         <b>Closure Rate:</b> 1.0         </div>`)[0];
+                popup_3acacfcf2c238a260bef561948561998.setContent(html_4480fcc7dc07103c991d47672ca41067);
+            
+        
+
+        polygon_74b8c4a6f84fa53658d20607e25f0230.bindPopup(popup_3acacfcf2c238a260bef561948561998)
+        ;
+
+        
+    
+    
+            var polygon_1b8ab82b52497b140d763f738636c48b = L.polygon(
+                [[13.043258617365309, 77.61677040193081], [13.048246545770983, 77.61685470501199], [13.050753316531187, 77.61268241063078], [13.048272233100626, 77.60842608231617], [13.043284538148487, 77.60834192366109], [13.040777693171128, 77.61251394890029]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_64b9b07d2684a47c279ece137ae13473 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d21d9a542536fa6e4ea6f433579f85ae = $(`<div id="html_d21d9a542536fa6e4ea6f433579f85ae" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892c8dfffff<br>         <b>Hotspot Score:</b> 0.374<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 30<br>         <b>Avg Impact:</b> 40.93<br>         <b>Avg Duration:</b> 7213.48 min<br>         <b>Closure Rate:</b> 0.33         </div>`)[0];
+                popup_64b9b07d2684a47c279ece137ae13473.setContent(html_d21d9a542536fa6e4ea6f433579f85ae);
+            
+        
+
+        polygon_1b8ab82b52497b140d763f738636c48b.bindPopup(popup_64b9b07d2684a47c279ece137ae13473)
+        ;
+
+        
+    
+    
+            var polygon_52c7bb8537d0ba03dee4fe6141bf4ed1 = L.polygon(
+                [[13.013490128356677, 77.5657109182512], [13.018476863379613, 77.56579433844674], [13.020982914550176, 77.56162442601565], [13.018502305058982, 77.557371362817], [13.013515804023957, 77.55728808687829], [13.011009678490028, 77.5614577298872]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_7a9219981fa0dc4d64ac117f54e0406c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f39ad7d4a991b106374670600758ddf3 = $(`<div id="html_f39ad7d4a991b106374670600758ddf3" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b35fffff<br>         <b>Hotspot Score:</b> 0.374<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 52<br>         <b>Avg Impact:</b> 37.13<br>         <b>Avg Duration:</b> 2247.21 min<br>         <b>Closure Rate:</b> 0.02         </div>`)[0];
+                popup_7a9219981fa0dc4d64ac117f54e0406c.setContent(html_f39ad7d4a991b106374670600758ddf3);
+            
+        
+
+        polygon_52c7bb8537d0ba03dee4fe6141bf4ed1.bindPopup(popup_7a9219981fa0dc4d64ac117f54e0406c)
+        ;
+
+        
+    
+    
+            var polygon_d972ef91678f981085735d545d10e9aa = L.polygon(
+                [[12.930778597305551, 77.67808888836046], [12.935769043706287, 77.67817421136853], [12.938280726734323, 77.67400107139919], [12.935802036404734, 77.66974287697205], [12.93081182293575, 77.6696576984536], [12.928300066862334, 77.67383056987842]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_ad5dad47f52fd62cd36acc32462e3fec = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_98ac8a63686b6983b91ac0d0b66358cd = $(`<div id="html_98ac8a63686b6983b91ac0d0b66358cd" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892547fffff<br>         <b>Hotspot Score:</b> 0.373<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 44.0<br>         <b>Avg Duration:</b> 340.34 min<br>         <b>Closure Rate:</b> 1.0         </div>`)[0];
+                popup_ad5dad47f52fd62cd36acc32462e3fec.setContent(html_98ac8a63686b6983b91ac0d0b66358cd);
+            
+        
+
+        polygon_d972ef91678f981085735d545d10e9aa.bindPopup(popup_ad5dad47f52fd62cd36acc32462e3fec)
+        ;
+
+        
+    
+    
+            var polygon_f59b86d8737a54c02cc8160a77f28c12 = L.polygon(
+                [[12.84134159073814, 77.58388275070195], [12.846330057654114, 77.58396643541492], [12.848841352331679, 77.57979814696745], [12.846364253170728, 77.57554644281626], [12.84137602019833, 77.5754629022494], [12.838864652441153, 77.57963092169341]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a72342b20cdc2ef8d340c8fa378adb30 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d1f1cc9a9c908b31a726d458c9fa3ac1 = $(`<div id="html_d1f1cc9a9c908b31a726d458c9fa3ac1" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618926bbfffff<br>         <b>Hotspot Score:</b> 0.373<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 44.0<br>         <b>Avg Duration:</b> 2.52 min<br>         <b>Closure Rate:</b> 1.0         </div>`)[0];
+                popup_a72342b20cdc2ef8d340c8fa378adb30.setContent(html_d1f1cc9a9c908b31a726d458c9fa3ac1);
+            
+        
+
+        polygon_f59b86d8737a54c02cc8160a77f28c12.bindPopup(popup_a72342b20cdc2ef8d340c8fa378adb30)
+        ;
+
+        
+    
+    
+            var polygon_66a01ea3388706c701e2f609cffbe200 = L.polygon(
+                [[12.983514015916596, 77.58205677874184], [12.988501424614784, 77.58214047078879], [12.991008788532142, 77.57797032996996], [12.988528817800235, 77.57371676637361], [12.983541642951739, 77.57363321860072], [12.981034204983276, 77.57780309015591]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_2e134316c93c5d8272ccb755101a0b1f = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_585ea4360ef85157903e85e8e6980674 = $(`<div id="html_585ea4360ef85157903e85e8e6980674" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b09fffff<br>         <b>Hotspot Score:</b> 0.371<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 54<br>         <b>Avg Impact:</b> 22.09<br>         <b>Avg Duration:</b> 124340.73 min<br>         <b>Closure Rate:</b> 0.22         </div>`)[0];
+                popup_2e134316c93c5d8272ccb755101a0b1f.setContent(html_585ea4360ef85157903e85e8e6980674);
+            
+        
+
+        polygon_66a01ea3388706c701e2f609cffbe200.bindPopup(popup_2e134316c93c5d8272ccb755101a0b1f)
+        ;
+
+        
+    
+    
+            var polygon_9ff5c23d3e922830129429c4330f5fb4 = L.polygon(
+                [[12.94623743496627, 77.54353430163498], [12.95122404414383, 77.54361732388935], [12.953731270979128, 77.53944918289586], [12.951251962695661, 77.53519828910204], [12.94626558778205, 77.53511541098], [12.943758286885792, 77.53928328252525]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_946c9ca84a4abe8260fc6524c5c87ea4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2e667105caef72da31ca736b7d44f846 = $(`<div id="html_2e667105caef72da31ca736b7d44f846" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145a07fffff<br>         <b>Hotspot Score:</b> 0.371<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 50<br>         <b>Avg Impact:</b> 36.66<br>         <b>Avg Duration:</b> 1567.23 min<br>         <b>Closure Rate:</b> 0.1         </div>`)[0];
+                popup_946c9ca84a4abe8260fc6524c5c87ea4.setContent(html_2e667105caef72da31ca736b7d44f846);
+            
+        
+
+        polygon_9ff5c23d3e922830129429c4330f5fb4.bindPopup(popup_946c9ca84a4abe8260fc6524c5c87ea4)
+        ;
+
+        
+    
+    
+            var polygon_593baec90c098936d1b53887d7b38a66 = L.polygon(
+                [[12.983486115099781, 77.59048113560961], [12.988473757563618, 77.59056497195395], [12.990981375325301, 77.58639450493625], [12.988501424614784, 77.58214047078879], [12.983514015916596, 77.58205677874184], [12.98100632416107, 77.58622697655073]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_2506ce1e5d8c2bdc981d0dea1aa327dd = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c59b2c969c9766370b7a0ad0b8d47896 = $(`<div id="html_c59b2c969c9766370b7a0ad0b8d47896" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b47fffff<br>         <b>Hotspot Score:</b> 0.369<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 56<br>         <b>Avg Impact:</b> 33.04<br>         <b>Avg Duration:</b> 13460.91 min<br>         <b>Closure Rate:</b> 0.11         </div>`)[0];
+                popup_2506ce1e5d8c2bdc981d0dea1aa327dd.setContent(html_c59b2c969c9766370b7a0ad0b8d47896);
+            
+        
+
+        polygon_593baec90c098936d1b53887d7b38a66.bindPopup(popup_2506ce1e5d8c2bdc981d0dea1aa327dd)
+        ;
+
+        
+    
+    
+            var polygon_9d3938442052b194453bb50ca74ab097 = L.polygon(
+                [[12.983727372673586, 77.51469062702621], [12.988712908224871, 77.51477316553411], [12.991218241241828, 77.51060563923905], [12.988738113214016, 77.50635584414213], [12.983752812183162, 77.50627344972142], [12.981247404657552, 77.51044070631623]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a0fa3293f34f0a5ef74a365feb780935 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c32197b14c663a9dc5a2ef11ef5c5fa5 = $(`<div id="html_c32197b14c663a9dc5a2ef11ef5c5fa5" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 886014580bfffff<br>         <b>Hotspot Score:</b> 0.365<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 49<br>         <b>Avg Impact:</b> 37.2<br>         <b>Avg Duration:</b> 1574.15 min<br>         <b>Closure Rate:</b> 0.02         </div>`)[0];
+                popup_a0fa3293f34f0a5ef74a365feb780935.setContent(html_c32197b14c663a9dc5a2ef11ef5c5fa5);
+            
+        
+
+        polygon_9d3938442052b194453bb50ca74ab097.bindPopup(popup_a0fa3293f34f0a5ef74a365feb780935)
+        ;
+
+        
+    
+    
+            var polygon_78e57228ad7cfcc4aa1df89c8674387b = L.polygon(
+                [[12.961141442428557, 77.5606244158267], [12.966128418975407, 77.5607077347414], [12.968635751306778, 77.55653872825913], [12.966156181134803, 77.55228667223159], [12.961169438669595, 77.5522034975106], [12.958662032292526, 77.55637223462924]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_282ed1c3a53dcd694c0bd327d56f3fd0 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_322a50906f15cca1c2f92e8972f7e129 = $(`<div id="html_322a50906f15cca1c2f92e8972f7e129" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145a2dfffff<br>         <b>Hotspot Score:</b> 0.364<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 42<br>         <b>Avg Impact:</b> 38.17<br>         <b>Avg Duration:</b> 10366.89 min<br>         <b>Closure Rate:</b> 0.07         </div>`)[0];
+                popup_282ed1c3a53dcd694c0bd327d56f3fd0.setContent(html_322a50906f15cca1c2f92e8972f7e129);
+            
+        
+
+        polygon_78e57228ad7cfcc4aa1df89c8674387b.bindPopup(popup_282ed1c3a53dcd694c0bd327d56f3fd0)
+        ;
+
+        
+    
+    
+            var polygon_2569619b4e3bfe12053ed17010e7f177 = L.polygon(
+                [[12.968522983608956, 77.5902296433348], [12.97351072804717, 77.59031347130018], [12.976018747501355, 77.58614321654396], [12.97353909641005, 77.58188940301244], [12.968551585752207, 77.58180571932974], [12.966043492403111, 77.58597570490164]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_ad03ebdf156e97d42239a7d08f11b9d6 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d5d6c21ed5ff80d8ed80d8906f7494ba = $(`<div id="html_d5d6c21ed5ff80d8ed80d8906f7494ba" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b4bfffff<br>         <b>Hotspot Score:</b> 0.362<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 58<br>         <b>Avg Impact:</b> 32.02<br>         <b>Avg Duration:</b> 3171.49 min<br>         <b>Closure Rate:</b> 0.16         </div>`)[0];
+                popup_ad03ebdf156e97d42239a7d08f11b9d6.setContent(html_d5d6c21ed5ff80d8ed80d8906f7494ba);
+            
+        
+
+        polygon_2569619b4e3bfe12053ed17010e7f177.bindPopup(popup_ad03ebdf156e97d42239a7d08f11b9d6)
+        ;
+
+        
+    
+    
+            var polygon_0a1ddbf649d224944d14aa8e3ac61515 = L.polygon(
+                [[12.870997908198014, 77.65177924567593], [12.875988050319677, 77.65186410135249], [12.878500570042215, 77.64769278521037], [12.876023020461334, 77.64343688201016], [12.871033111581589, 77.64335217069485], [12.868520519038581, 77.64752321822424]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_54b886411df5d41e147ea76ff9a0003e = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_43f6204870ab409b87e61504ce486d82 = $(`<div id="html_43f6204870ab409b87e61504ce486d82" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892441fffff<br>         <b>Hotspot Score:</b> 0.36<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 11<br>         <b>Avg Impact:</b> 49.55<br>         <b>Avg Duration:</b> 106.22 min<br>         <b>Closure Rate:</b> 0.09         </div>`)[0];
+                popup_54b886411df5d41e147ea76ff9a0003e.setContent(html_43f6204870ab409b87e61504ce486d82);
+            
+        
+
+        polygon_0a1ddbf649d224944d14aa8e3ac61515.bindPopup(popup_54b886411df5d41e147ea76ff9a0003e)
+        ;
+
+        
+    
+    
+            var polygon_2d85f30ca31fcb2f1e5e9d5655fc7c16 = L.polygon(
+                [[12.953120562041514, 77.70799055343352], [12.958111672059037, 77.70807639521068], [12.960623642917499, 77.70390180113395], [12.958144576749156, 77.6996416336727], [12.953153699345728, 77.69955593648812], [12.95064165549425, 77.70373026217796]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_1ab26db1ef53a1fc2c1b143a7434304c = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_497721849dd3b58a9395b40a9707cf01 = $(`<div id="html_497721849dd3b58a9395b40a9707cf01" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618920b1fffff<br>         <b>Hotspot Score:</b> 0.354<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 23<br>         <b>Avg Impact:</b> 41.87<br>         <b>Avg Duration:</b> 2262.77 min<br>         <b>Closure Rate:</b> 0.3         </div>`)[0];
+                popup_1ab26db1ef53a1fc2c1b143a7434304c.setContent(html_497721849dd3b58a9395b40a9707cf01);
+            
+        
+
+        polygon_2d85f30ca31fcb2f1e5e9d5655fc7c16.bindPopup(popup_1ab26db1ef53a1fc2c1b143a7434304c)
+        ;
+
+        
+    
+    
+            var polygon_5a98d3cd5e1ff240915367d344306c0a = L.polygon(
+                [[13.178015482675779, 77.57689364555598], [13.183001270639721, 77.57697730198672], [13.185503126893284, 77.57280472687054], [13.183019270569696, 77.56854876496703], [13.178033716339417, 77.56846525297841], [13.17553178469685, 77.572637558457]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_b57d84bc27d213c7e98c284a8ea0b384 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_4517ea23da246e660ce4ea9986add38e = $(`<div id="html_4517ea23da246e660ce4ea9986add38e" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860169551fffff<br>         <b>Hotspot Score:</b> 0.35<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 53.0<br>         <b>Avg Duration:</b> 25.1 min<br>         <b>Closure Rate:</b> 0.0         </div>`)[0];
+                popup_b57d84bc27d213c7e98c284a8ea0b384.setContent(html_4517ea23da246e660ce4ea9986add38e);
+            
+        
+
+        polygon_5a98d3cd5e1ff240915367d344306c0a.bindPopup(popup_b57d84bc27d213c7e98c284a8ea0b384)
+        ;
+
+        
+    
+    
+            var polygon_c2ce27f69fcda7e7f7e9c5d6d3077956 = L.polygon(
+                [[12.96108463022687, 77.57746864395514], [12.966072074685142, 77.57755225132728], [12.968579914365863, 77.57338259198146], [12.966100383517368, 77.56912959452353], [12.961113172972837, 77.56904613139179], [12.958605259360846, 77.57321552148338]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a1b041ef20511a9a09540a0a78333cc4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_70a0295d9d7f08120c40b171a4114544 = $(`<div id="html_70a0295d9d7f08120c40b171a4114544" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b59fffff<br>         <b>Hotspot Score:</b> 0.348<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 42<br>         <b>Avg Impact:</b> 34.29<br>         <b>Avg Duration:</b> 13731.11 min<br>         <b>Closure Rate:</b> 0.21         </div>`)[0];
+                popup_a1b041ef20511a9a09540a0a78333cc4.setContent(html_70a0295d9d7f08120c40b171a4114544);
+            
+        
+
+        polygon_c2ce27f69fcda7e7f7e9c5d6d3077956.bindPopup(popup_a1b041ef20511a9a09540a0a78333cc4)
+        ;
+
+        
+    
+    
+            var polygon_e765039389a2fa1b42459497fee81a91 = L.polygon(
+                [[12.976046862138613, 77.57771947442751], [12.981034204983276, 77.57780309015591], [12.983541642951739, 77.57363321860072], [12.981061812103636, 77.56938000060167], [12.976074703158027, 77.56929652912835], [12.973567191159292, 77.57346613140479]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_e70fbc935fc497587bc495ab1ef85960 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_cae9c7ebb399f1d032206e50522b029e = $(`<div id="html_cae9c7ebb399f1d032206e50522b029e" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b55fffff<br>         <b>Hotspot Score:</b> 0.346<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 85<br>         <b>Avg Impact:</b> 21.18<br>         <b>Avg Duration:</b> 2587.5 min<br>         <b>Closure Rate:</b> 0.09         </div>`)[0];
+                popup_e70fbc935fc497587bc495ab1ef85960.setContent(html_cae9c7ebb399f1d032206e50522b029e);
+            
+        
+
+        polygon_e765039389a2fa1b42459497fee81a91.bindPopup(popup_e70fbc935fc497587bc495ab1ef85960)
+        ;
+
+        
+    
+    
+            var polygon_d1c034b425f34642d5df6019d587dcf2 = L.polygon(
+                [[12.960967724830398, 77.61116665917017], [12.965956104102986, 77.61125084373666], [12.968464958431573, 77.60707988031015], [12.965985507187543, 77.60282500135773], [12.960997361492353, 77.60274096112477], [12.95848843346157, 77.60691165551646]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_f3e2b9a20df1a6602804c4c0d7a2ac63 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_8fd43d78d9627c1304169f71ca726d72 = $(`<div id="html_8fd43d78d9627c1304169f71ca726d72" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925a1fffff<br>         <b>Hotspot Score:</b> 0.345<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 38<br>         <b>Avg Impact:</b> 37.61<br>         <b>Avg Duration:</b> 1373.5 min<br>         <b>Closure Rate:</b> 0.13         </div>`)[0];
+                popup_f3e2b9a20df1a6602804c4c0d7a2ac63.setContent(html_8fd43d78d9627c1304169f71ca726d72);
+            
+        
+
+        polygon_d1c034b425f34642d5df6019d587dcf2.bindPopup(popup_f3e2b9a20df1a6602804c4c0d7a2ac63)
+        ;
+
+        
+    
+    
+            var polygon_71e6f15595752d43f93af07f95117daa = L.polygon(
+                [[12.968494107860598, 77.5986543637454], [12.973482085995094, 77.59873833601672], [12.975990359170659, 77.5945677552265], [12.97351072804717, 77.59031347130018], [12.968522983608956, 77.5902296433348], [12.966014636595762, 77.59439995499558]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_133ce8d10fe1af9dc94cd947b58c45ad = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2014d72419e73420acd71dee6e1f209d = $(`<div id="html_2014d72419e73420acd71dee6e1f209d" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b49fffff<br>         <b>Hotspot Score:</b> 0.344<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 48<br>         <b>Avg Impact:</b> 33.88<br>         <b>Avg Duration:</b> 7752.13 min<br>         <b>Closure Rate:</b> 0.08         </div>`)[0];
+                popup_133ce8d10fe1af9dc94cd947b58c45ad.setContent(html_2014d72419e73420acd71dee6e1f209d);
+            
+        
+
+        polygon_71e6f15595752d43f93af07f95117daa.bindPopup(popup_133ce8d10fe1af9dc94cd947b58c45ad)
+        ;
+
+        
+    
+    
+            var polygon_85bbabe32093dba7c6edd140680f426b = L.polygon(
+                [[12.930711324682111, 77.69495364867035], [12.935702236692793, 77.69503926072697], [12.938214426467901, 77.69086547185775], [12.935735777160616, 77.68660633937125], [12.930745097912622, 77.68652087185046], [12.92823283520693, 77.69069439228606]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_64d6c1cd1afc5c66db20ed2a26d3d0ff = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_c942ebdc34912cec34578a202f0b1cc8 = $(`<div id="html_c942ebdc34912cec34578a202f0b1cc8" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892093fffff<br>         <b>Hotspot Score:</b> 0.336<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 46<br>         <b>Avg Impact:</b> 35.3<br>         <b>Avg Duration:</b> 156.94 min<br>         <b>Closure Rate:</b> 0.0         </div>`)[0];
+                popup_64d6c1cd1afc5c66db20ed2a26d3d0ff.setContent(html_c942ebdc34912cec34578a202f0b1cc8);
+            
+        
+
+        polygon_85bbabe32093dba7c6edd140680f426b.bindPopup(popup_64d6c1cd1afc5c66db20ed2a26d3d0ff)
+        ;
+
+        
+    
+    
+            var polygon_fa499d88b34c4120a05204c62550b30e = L.polygon(
+                [[13.035991205519833, 77.54502912541321], [13.04097719927601, 77.54511219746364], [13.043482010148097, 77.54094278368477], [13.04100090191644, 77.53669056745694], [13.036015142335277, 77.53660763962702], [13.033510256808622, 77.54077678381023]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_3bdbc17e93ac92dd2475a739a9510660 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ff5f8fc3da85adc546cb0f484b2ccb77 = $(`<div id="html_ff5f8fc3da85adc546cb0f484b2ccb77" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 886014590bfffff<br>         <b>Hotspot Score:</b> 0.334<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 33<br>         <b>Avg Impact:</b> 37.64<br>         <b>Avg Duration:</b> 56.1 min<br>         <b>Closure Rate:</b> 0.18         </div>`)[0];
+                popup_3bdbc17e93ac92dd2475a739a9510660.setContent(html_ff5f8fc3da85adc546cb0f484b2ccb77);
+            
+        
+
+        polygon_fa499d88b34c4120a05204c62550b30e.bindPopup(popup_3bdbc17e93ac92dd2475a739a9510660)
+        ;
+
+        
+    
+    
+            var polygon_6b7d808fc90b67c2b4bad973fd3f714c = L.polygon(
+                [[13.050803907470451, 77.59582661344515], [13.055791199484938, 77.59591055970087], [13.058297132903268, 77.59173897413108], [13.055815848714664, 77.58748371160303], [13.050828790356444, 77.58739990972256], [13.048322782528354, 77.59157122600067]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_512eac97f4ce1f93c8f9509d9e286af6 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2f3553d75b99f4e4c2a839ab75bfb806 = $(`<div id="html_2f3553d75b99f4e4c2a839ab75bfb806" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892cb9fffff<br>         <b>Hotspot Score:</b> 0.334<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 40<br>         <b>Avg Impact:</b> 36.65<br>         <b>Avg Duration:</b> 75.88 min<br>         <b>Closure Rate:</b> 0.05         </div>`)[0];
+                popup_512eac97f4ce1f93c8f9509d9e286af6.setContent(html_2f3553d75b99f4e4c2a839ab75bfb806);
+            
+        
+
+        polygon_6b7d808fc90b67c2b4bad973fd3f714c.bindPopup(popup_512eac97f4ce1f93c8f9509d9e286af6)
+        ;
+
+        
+    
+    
+            var polygon_3f777452ed75ab9ff83e29b078443605 = L.polygon(
+                [[13.080727130646403, 77.59633033294632], [13.085714210569925, 77.59641429598975], [13.08821933692885, 77.59224228561199], [13.085737457968925, 77.58798658153734], [13.080750611671101, 77.58790276289861], [13.078245410705286, 77.59207450393562]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_fe0ae53b1365f7b9d2f1372f44b59b78 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b011b2e0763f6ae163c0ac7a462fb1c8 = $(`<div id="html_b011b2e0763f6ae163c0ac7a462fb1c8" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860169641fffff<br>         <b>Hotspot Score:</b> 0.332<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 33<br>         <b>Avg Impact:</b> 39.15<br>         <b>Avg Duration:</b> 63.94 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_fe0ae53b1365f7b9d2f1372f44b59b78.setContent(html_b011b2e0763f6ae163c0ac7a462fb1c8);
+            
+        
+
+        polygon_3f777452ed75ab9ff83e29b078443605.bindPopup(popup_fe0ae53b1365f7b9d2f1372f44b59b78)
+        ;
+
+        
+    
+    
+            var polygon_ec4dd2d764d66ef2f02b151b16a3f46a = L.polygon(
+                [[12.953500120388844, 77.60682754732305], [12.95848843346157, 77.60691165551646], [12.960997361492353, 77.60274096112477], [12.95851805012956, 77.59848642759543], [12.953529970683634, 77.59840246371652], [12.951020968971516, 77.60257288905821]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_dde14a1a8e3a00a28b6ef6d5a7071eaa = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_9caa9476bc989ac4d91a22b27c4136b2 = $(`<div id="html_9caa9476bc989ac4d91a22b27c4136b2" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925abfffff<br>         <b>Hotspot Score:</b> 0.331<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 27<br>         <b>Avg Impact:</b> 37.26<br>         <b>Avg Duration:</b> 21271.27 min<br>         <b>Closure Rate:</b> 0.19         </div>`)[0];
+                popup_dde14a1a8e3a00a28b6ef6d5a7071eaa.setContent(html_9caa9476bc989ac4d91a22b27c4136b2);
+            
+        
+
+        polygon_ec4dd2d764d66ef2f02b151b16a3f46a.bindPopup(popup_dde14a1a8e3a00a28b6ef6d5a7071eaa)
+        ;
+
+        
+    
+    
+            var polygon_cf4af8c244ebdf95b52d5d0906f4875c = L.polygon(
+                [[13.036038804905903, 77.5281869521916], [13.041024330228243, 77.52826973582441], [13.043528632535809, 77.52410097628147], [13.041047484287821, 77.51984970281626], [13.036062193308021, 77.51976706335715], [13.033557816231522, 77.52393555319537]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_52a1502c7c9890c567619472b76657da = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_556478bc9604cc76e4f0e8803b9195c1 = $(`<div id="html_556478bc9604cc76e4f0e8803b9195c1" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145911fffff<br>         <b>Hotspot Score:</b> 0.33<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 32<br>         <b>Avg Impact:</b> 39.28<br>         <b>Avg Duration:</b> 167.52 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_52a1502c7c9890c567619472b76657da.setContent(html_556478bc9604cc76e4f0e8803b9195c1);
+            
+        
+
+        polygon_cf4af8c244ebdf95b52d5d0906f4875c.bindPopup(popup_52a1502c7c9890c567619472b76657da)
+        ;
+
+        
+    
+    
+            var polygon_38605dabcd3dab63f48ff0366f5b19bb = L.polygon(
+                [[13.043551532307578, 77.51568127059645], [13.0485366537263, 77.51576384210342], [13.051040372550558, 77.51159546754474], [13.048559044858031, 77.50734479128354], [13.043574157899844, 77.5072623639225], [13.04107036417153, 77.5114304686825]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_850414dd68c19ed2243ce9fd6934313a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_bd13c93fd75a0d9b79b6df7c712ebf21 = $(`<div id="html_bd13c93fd75a0d9b79b6df7c712ebf21" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88601459e9fffff<br>         <b>Hotspot Score:</b> 0.33<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 44<br>         <b>Avg Impact:</b> 34.73<br>         <b>Avg Duration:</b> 602.88 min<br>         <b>Closure Rate:</b> 0.05         </div>`)[0];
+                popup_850414dd68c19ed2243ce9fd6934313a.setContent(html_bd13c93fd75a0d9b79b6df7c712ebf21);
+            
+        
+
+        polygon_38605dabcd3dab63f48ff0366f5b19bb.bindPopup(popup_850414dd68c19ed2243ce9fd6934313a)
+        ;
+
+        
+    
+    
+            var polygon_a2be3cbde0daa1e29d50b1695b99b769 = L.polygon(
+                [[12.990722319831095, 77.6622478980492], [12.995711894600392, 77.66233296611257], [12.998221469407353, 77.65815962570115], [12.995741542998834, 77.653901485985], [12.990752201271855, 77.65381656242386], [12.988242552908831, 77.65798963408243]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_bf0135fcb08be2397bdaf4b922801f47 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_7d729a495ca17e4841e8c988ecc548b4 = $(`<div id="html_7d729a495ca17e4841e8c988ecc548b4" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892ee9fffff<br>         <b>Hotspot Score:</b> 0.329<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 48<br>         <b>Avg Impact:</b> 33.54<br>         <b>Avg Duration:</b> 0.0 min<br>         <b>Closure Rate:</b> 0.02         </div>`)[0];
+                popup_bf0135fcb08be2397bdaf4b922801f47.setContent(html_7d729a495ca17e4841e8c988ecc548b4);
+            
+        
+
+        polygon_a2be3cbde0daa1e29d50b1695b99b769.bindPopup(popup_bf0135fcb08be2397bdaf4b922801f47)
+        ;
+
+        
+    
+    
+            var polygon_0c68482046b66206f23a288b68d35e1d = L.polygon(
+                [[12.98367567405291, 77.53152737757614], [12.98866167839395, 77.53161020432862], [12.991167519159815, 77.5274420235817], [12.98868742997684, 77.52319128567953], [12.983701659988816, 77.52310860306105], [12.981195744828591, 77.52727651421654]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_548b8b83b8853de19e2656ed00aa7569 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_acea2de1ff9c32d63a617d0fe3c7ea3d = $(`<div id="html_acea2de1ff9c32d63a617d0fe3c7ea3d" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145847fffff<br>         <b>Hotspot Score:</b> 0.329<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 31<br>         <b>Avg Impact:</b> 39.1<br>         <b>Avg Duration:</b> 3480.33 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_548b8b83b8853de19e2656ed00aa7569.setContent(html_acea2de1ff9c32d63a617d0fe3c7ea3d);
+            
+        
+
+        polygon_0c68482046b66206f23a288b68d35e1d.bindPopup(popup_548b8b83b8853de19e2656ed00aa7569)
+        ;
+
+        
+    
+    
+            var polygon_33dd70844476b3f2aed1dd8d78afca61 = L.polygon(
+                [[13.043310183913253, 77.59991424164285], [13.048297645327702, 77.59999825589512], [13.050803907470451, 77.59582661344515], [13.048322782528354, 77.59157122600067], [13.043335554735718, 77.59148735612794], [13.040829218261155, 77.59565872932593]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_1620b71e450639b18268e9f22989f796 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_206685221bc098484f348febd1bbd213 = $(`<div id="html_206685221bc098484f348febd1bbd213" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892c83fffff<br>         <b>Hotspot Score:</b> 0.329<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 26<br>         <b>Avg Impact:</b> 38.19<br>         <b>Avg Duration:</b> 21389.63 min<br>         <b>Closure Rate:</b> 0.12         </div>`)[0];
+                popup_1620b71e450639b18268e9f22989f796.setContent(html_206685221bc098484f348febd1bbd213);
+            
+        
+
+        polygon_33dd70844476b3f2aed1dd8d78afca61.bindPopup(popup_1620b71e450639b18268e9f22989f796)
+        ;
+
+        
+    
+    
+            var polygon_c400164a22ece6df5b330a8a9d6b71dd = L.polygon(
+                [[12.99813163722257, 77.68345785711276], [13.003121742736212, 77.68354329080431], [13.005631751802447, 77.67936903209498], [13.003151728814762, 77.67510960832648], [12.998161856124916, 77.67502431920242], [12.995651773596686, 77.67919830928513]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_d8893651864555216b4b9dfb4171c014 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0bc3075548c3e31074c17eb3939438cf = $(`<div id="html_0bc3075548c3e31074c17eb3939438cf" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892e39fffff<br>         <b>Hotspot Score:</b> 0.327<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 32<br>         <b>Avg Impact:</b> 38.94<br>         <b>Avg Duration:</b> 3719.49 min<br>         <b>Closure Rate:</b> 0.0         </div>`)[0];
+                popup_d8893651864555216b4b9dfb4171c014.setContent(html_0bc3075548c3e31074c17eb3939438cf);
+            
+        
+
+        polygon_c400164a22ece6df5b330a8a9d6b71dd.bindPopup(popup_d8893651864555216b4b9dfb4171c014)
+        ;
+
+        
+    
+    
+            var polygon_2ab8bc08506388c8ee2f23a62c17446a = L.polygon(
+                [[12.968464958431573, 77.60707988031015], [12.973453170178233, 77.6071639969107], [12.97596169707093, 77.60299309022386], [12.973482085995094, 77.59873833601672], [12.968494107860598, 77.5986543637454], [12.965985507187543, 77.60282500135773]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_da5154dcc1ca0f1fd338e0b921412968 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_4f152db6853e84ad4b8fab1cbe35d454 = $(`<div id="html_4f152db6853e84ad4b8fab1cbe35d454" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925a7fffff<br>         <b>Hotspot Score:</b> 0.326<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 39<br>         <b>Avg Impact:</b> 35.62<br>         <b>Avg Duration:</b> 8000.76 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_da5154dcc1ca0f1fd338e0b921412968.setContent(html_4f152db6853e84ad4b8fab1cbe35d454);
+            
+        
+
+        polygon_2ab8bc08506388c8ee2f23a62c17446a.bindPopup(popup_da5154dcc1ca0f1fd338e0b921412968)
+        ;
+
+        
+    
+    
+            var polygon_d1e495e54a9b23c85a7ea5f12daa2a97 = L.polygon(
+                [[13.065765677957403, 77.59607846060528], [13.070752864264925, 77.59616241525423], [13.073258394311326, 77.59199061729116], [13.07077681255635, 77.58773513400118], [13.06578985988984, 77.58765132374221], [13.06328425533509, 77.59182285238904]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_b00c4e111bb090c1490b51562489f9cd = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f946b4802ced6658b8690c396c35c251 = $(`<div id="html_f946b4802ced6658b8690c396c35c251" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892cb5fffff<br>         <b>Hotspot Score:</b> 0.326<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 35<br>         <b>Avg Impact:</b> 37.34<br>         <b>Avg Duration:</b> 71.18 min<br>         <b>Closure Rate:</b> 0.06         </div>`)[0];
+                popup_b00c4e111bb090c1490b51562489f9cd.setContent(html_f946b4802ced6658b8690c396c35c251);
+            
+        
+
+        polygon_d1e495e54a9b23c85a7ea5f12daa2a97.bindPopup(popup_b00c4e111bb090c1490b51562489f9cd)
+        ;
+
+        
+    
+    
+            var polygon_a8ffb3d8035d221ef50a2ecf6634e41f = L.polygon(
+                [[13.155446878584534, 77.63131698804516], [13.160434349784909, 77.63140157122625], [13.162938473760352, 77.62722719403934], [13.160455201402293, 77.6229685029202], [13.155467963413036, 77.62288406431065], [13.152963764568485, 77.6270581722545]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_ceb43204c9aebb29b25a22a22757c8e8 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_17300ba44534845295a7281eab28accb = $(`<div id="html_17300ba44534845295a7281eab28accb" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860169761fffff<br>         <b>Hotspot Score:</b> 0.325<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 3<br>         <b>Avg Impact:</b> 49.33<br>         <b>Avg Duration:</b> 61.03 min<br>         <b>Closure Rate:</b> 0.0         </div>`)[0];
+                popup_ceb43204c9aebb29b25a22a22757c8e8.setContent(html_17300ba44534845295a7281eab28accb);
+            
+        
+
+        polygon_a8ffb3d8035d221ef50a2ecf6634e41f.bindPopup(popup_ceb43204c9aebb29b25a22a22757c8e8)
+        ;
+
+        
+    
+    
+            var polygon_5437eb498d3ec6d5fe9c257d6bf91e2e = L.polygon(
+                [[13.043360650691989, 77.5830612673679], [13.04834764477877, 77.58314499288439], [13.050853398288293, 77.57897400291556], [13.0483722321552, 77.57471955679777], [13.043385471858297, 77.57463597561421], [13.040879643902407, 77.57880669622129]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_c3623ce9c64a903497f163e462a8b3dc = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ac87156533ef50192d9a560306319a10 = $(`<div id="html_ac87156533ef50192d9a560306319a10" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892c97fffff<br>         <b>Hotspot Score:</b> 0.325<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 52<br>         <b>Avg Impact:</b> 30.15<br>         <b>Avg Duration:</b> 17676.26 min<br>         <b>Closure Rate:</b> 0.0         </div>`)[0];
+                popup_c3623ce9c64a903497f163e462a8b3dc.setContent(html_ac87156533ef50192d9a560306319a10);
+            
+        
+
+        polygon_5437eb498d3ec6d5fe9c257d6bf91e2e.bindPopup(popup_c3623ce9c64a903497f163e462a8b3dc)
+        ;
+
+        
+    
+    
+            var polygon_014c40ad8592e8d84ef331ff45971320 = L.polygon(
+                [[12.983342501642833, 77.63261486204793], [12.988331311673026, 77.63269942022819], [12.990840198592991, 77.62852732427739], [12.988360349187925, 77.62427093908599], [12.983371772502585, 77.62418652531942], [12.980862811875218, 77.62835835233632]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_cc7a5fd9c2aeafdaacbe6a370290f017 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_14122563194bdaa4ff48161aad48b8f0 = $(`<div id="html_14122563194bdaa4ff48161aad48b8f0" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892e8bfffff<br>         <b>Hotspot Score:</b> 0.324<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 50.0<br>         <b>Avg Duration:</b> 0.0 min<br>         <b>Closure Rate:</b> 0.0         </div>`)[0];
+                popup_cc7a5fd9c2aeafdaacbe6a370290f017.setContent(html_14122563194bdaa4ff48161aad48b8f0);
+            
+        
+
+        polygon_014c40ad8592e8d84ef331ff45971320.bindPopup(popup_cc7a5fd9c2aeafdaacbe6a370290f017)
+        ;
+
+        
+    
+    
+            var polygon_2d70768f95e353765ee6a44928334ff7 = L.polygon(
+                [[12.89363776233051, 77.60581846752578], [12.898626473928346, 77.60590254210322], [12.90113700333959, 77.60173269667776], [12.898658894435362, 77.59747904563271], [12.893670416521754, 77.59739511531096], [12.891159813825922, 77.60156469178432]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_aef9da86fc504789045680d7c281fcd7 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_78c6ab250915935c26d339b604a7a91e = $(`<div id="html_78c6ab250915935c26d339b604a7a91e" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618924edfffff<br>         <b>Hotspot Score:</b> 0.323<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 31<br>         <b>Avg Impact:</b> 37.9<br>         <b>Avg Duration:</b> 4845.12 min<br>         <b>Closure Rate:</b> 0.06         </div>`)[0];
+                popup_aef9da86fc504789045680d7c281fcd7.setContent(html_78c6ab250915935c26d339b604a7a91e);
+            
+        
+
+        polygon_2d70768f95e353765ee6a44928334ff7.bindPopup(popup_aef9da86fc504789045680d7c281fcd7)
+        ;
+
+        
+    
+    
+            var polygon_d231c8024154c54d20a5c3924c0c1ca2 = L.polygon(
+                [[12.961113172972837, 77.56904613139179], [12.966100383517368, 77.56912959452353], [12.96860796952551, 77.56496026154097], [12.966128418975407, 77.5607077347414], [12.961141442428557, 77.5606244158267], [12.958633782431933, 77.5647934795003]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a257a988f6a6446b27b4eec3d8b84c3a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_b3b5ecee505bc3a53008a4ae36843228 = $(`<div id="html_b3b5ecee505bc3a53008a4ae36843228" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b5bfffff<br>         <b>Hotspot Score:</b> 0.323<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 31<br>         <b>Avg Impact:</b> 37.71<br>         <b>Avg Duration:</b> 2712.47 min<br>         <b>Closure Rate:</b> 0.1         </div>`)[0];
+                popup_a257a988f6a6446b27b4eec3d8b84c3a.setContent(html_b3b5ecee505bc3a53008a4ae36843228);
+            
+        
+
+        polygon_d231c8024154c54d20a5c3924c0c1ca2.bindPopup(popup_a257a988f6a6446b27b4eec3d8b84c3a)
+        ;
+
+        
+    
+    
+            var polygon_18f3a1a6bf287a63acfdce80dbf4e466 = L.polygon(
+                [[12.990840198592991, 77.62852732427739], [12.995828840686835, 77.62861181447097], [12.998337399998205, 77.62443977505798], [12.995857390999006, 77.62018351443085], [12.990868982284796, 77.62009916864668], [12.988360349187925, 77.62427093908599]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_0d150aa91ca707d6f4d95b0d1c13cded = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d46497c852077cad6ca395f5e1dc5b45 = $(`<div id="html_d46497c852077cad6ca395f5e1dc5b45" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892e83fffff<br>         <b>Hotspot Score:</b> 0.322<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 38.0<br>         <b>Avg Duration:</b> 0.0 min<br>         <b>Closure Rate:</b> 1.0         </div>`)[0];
+                popup_0d150aa91ca707d6f4d95b0d1c13cded.setContent(html_d46497c852077cad6ca395f5e1dc5b45);
+            
+        
+
+        polygon_18f3a1a6bf287a63acfdce80dbf4e466.bindPopup(popup_0d150aa91ca707d6f4d95b0d1c13cded)
+        ;
+
+        
+    
+    
+            var polygon_9538a1b5f6b8acf99ab33c5ee59b642a = L.polygon(
+                [[12.931334845669976, 77.52644913274727], [12.936321086407586, 77.52653185849474], [12.938828207887465, 77.52236458340494], [12.936349162703715, 77.51811485210611], [12.931363156412152, 77.51803227042956], [12.92885596085616, 77.52219927598672]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_95e29e124f7cfec49bda02f938a1b147 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_e8c5c44ce456fa7758169d25ef5f0a79 = $(`<div id="html_e8c5c44ce456fa7758169d25ef5f0a79" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145a11fffff<br>         <b>Hotspot Score:</b> 0.321<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 25<br>         <b>Avg Impact:</b> 39.56<br>         <b>Avg Duration:</b> 272.32 min<br>         <b>Closure Rate:</b> 0.12         </div>`)[0];
+                popup_95e29e124f7cfec49bda02f938a1b147.setContent(html_e8c5c44ce456fa7758169d25ef5f0a79);
+            
+        
+
+        polygon_9538a1b5f6b8acf99ab33c5ee59b642a.bindPopup(popup_95e29e124f7cfec49bda02f938a1b147)
+        ;
+
+        
+    
+    
+            var polygon_4d41456a4ed1634e90199e7cda06c236 = L.polygon(
+                [[12.990692163764301, 77.67068002804153], [12.995681971491507, 77.67076524063029], [12.998191800161353, 77.66659157531417], [12.995711894600392, 77.66233296611257], [12.990722319831095, 77.6622478980492], [12.988212417662574, 77.6664212946678]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_d96865bb6775f9c0bb355b56ec974554 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d0d2e89e39d46554eeb837eb08ff3aaf = $(`<div id="html_d0d2e89e39d46554eeb837eb08ff3aaf" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892e17fffff<br>         <b>Hotspot Score:</b> 0.32<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 35<br>         <b>Avg Impact:</b> 36.31<br>         <b>Avg Duration:</b> 7733.68 min<br>         <b>Closure Rate:</b> 0.03         </div>`)[0];
+                popup_d96865bb6775f9c0bb355b56ec974554.setContent(html_d0d2e89e39d46554eeb837eb08ff3aaf);
+            
+        
+
+        polygon_4d41456a4ed1634e90199e7cda06c236.bindPopup(popup_d96865bb6775f9c0bb355b56ec974554)
+        ;
+
+        
+    
+    
+            var polygon_5754eb14e6c9c8b77bf65fff9eb6278d = L.polygon(
+                [[12.998556094229267, 77.55703827570774], [13.003542698533876, 77.5571215433238], [13.006048898410368, 77.55295216975217], [13.00356856830179, 77.5486997980226], [12.9985821980839, 77.54861667462532], [12.996075923885687, 77.55278577874464]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_efe5dd9965a8ee256e5aadac101a0d51 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2102324af93d7c4df72a08ef70276fc2 = $(`<div id="html_2102324af93d7c4df72a08ef70276fc2" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860145b3bfffff<br>         <b>Hotspot Score:</b> 0.32<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 28<br>         <b>Avg Impact:</b> 35.5<br>         <b>Avg Duration:</b> 32075.06 min<br>         <b>Closure Rate:</b> 0.11         </div>`)[0];
+                popup_efe5dd9965a8ee256e5aadac101a0d51.setContent(html_2102324af93d7c4df72a08ef70276fc2);
+            
+        
+
+        polygon_5754eb14e6c9c8b77bf65fff9eb6278d.bindPopup(popup_efe5dd9965a8ee256e5aadac101a0d51)
+        ;
+
+        
+    
+    
+            var polygon_3b9cc8c806cc3848fab1484fb2a9c832 = L.polygon(
+                [[12.960997361492353, 77.60274096112477], [12.965985507187543, 77.60282500135773], [12.968494107860598, 77.5986543637454], [12.966014636595762, 77.59439995499558], [12.961026724562126, 77.59431605907282], [12.95851805012956, 77.59848642759543]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a0143d19168aca9f38a015c9fb408878 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0660de4f6ae35c98b10a9fb134f6e278 = $(`<div id="html_0660de4f6ae35c98b10a9fb134f6e278" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 88618925a3fffff<br>         <b>Hotspot Score:</b> 0.318<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 42<br>         <b>Avg Impact:</b> 32.45<br>         <b>Avg Duration:</b> 8606.69 min<br>         <b>Closure Rate:</b> 0.12         </div>`)[0];
+                popup_a0143d19168aca9f38a015c9fb408878.setContent(html_0660de4f6ae35c98b10a9fb134f6e278);
+            
+        
+
+        polygon_3b9cc8c806cc3848fab1484fb2a9c832.bindPopup(popup_a0143d19168aca9f38a015c9fb408878)
+        ;
+
+        
+    
+    
+            var polygon_35221666488eaff86d9e8611b1409bde = L.polygon(
+                [[13.140506029664307, 77.62263076537222], [13.145493377468842, 77.6227151955368], [13.147997651162099, 77.61854135685135], [13.14551465187689, 77.61428335728084], [13.140527537383445, 77.6141990716498], [13.138023188861883, 77.61837264106151]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_3c305f214debd8a1a84a46579432897e = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0717996deb587b124d9a4d83bd4f6153 = $(`<div id="html_0717996deb587b124d9a4d83bd4f6153" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860169747fffff<br>         <b>Hotspot Score:</b> 0.318<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 14<br>         <b>Avg Impact:</b> 44.64<br>         <b>Avg Duration:</b> 75.08 min<br>         <b>Closure Rate:</b> 0.0         </div>`)[0];
+                popup_3c305f214debd8a1a84a46579432897e.setContent(html_0717996deb587b124d9a4d83bd4f6153);
+            
+        
+
+        polygon_35221666488eaff86d9e8611b1409bde.bindPopup(popup_3c305f214debd8a1a84a46579432897e)
+        ;
+
+        
+    
+    
+            var polygon_da17303f205e204e9ab4b583c17b6450 = L.polygon(
+                [[12.878500570042215, 77.64769278521037], [12.883490546804607, 77.64777757294014], [12.886002740711302, 77.64360631310693], [12.883525030752148, 77.63935053420222], [12.878535287266821, 77.63926589082949], [12.876023020461334, 77.64343688201016]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_812e562aef7c1f88d5a379854ba960c7 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_cb5a42ea2edf78f5cb7c7e40aeb46a17 = $(`<div id="html_cb5a42ea2edf78f5cb7c7e40aeb46a17" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892447fffff<br>         <b>Hotspot Score:</b> 0.318<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 12<br>         <b>Avg Impact:</b> 44.33<br>         <b>Avg Duration:</b> 36.01 min<br>         <b>Closure Rate:</b> 0.08         </div>`)[0];
+                popup_812e562aef7c1f88d5a379854ba960c7.setContent(html_cb5a42ea2edf78f5cb7c7e40aeb46a17);
+            
+        
+
+        polygon_da17303f205e204e9ab4b583c17b6450.bindPopup(popup_812e562aef7c1f88d5a379854ba960c7)
+        ;
+
+        
+    
+    
+            var polygon_efc1ae7435d60663ec474da9455647a0 = L.polygon(
+                [[12.915840982899995, 77.66940217992729], [12.920831296107975, 77.66948734993136], [12.92334312520592, 77.66531474706653], [12.920864714097247, 77.66105724277887], [12.915874633919842, 77.66097221722652], [12.91336273181828, 77.66514455151588]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_20285019b93dc31fa6258e152a70088a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ec777110b76a0af6d1c566d6ef952bf9 = $(`<div id="html_ec777110b76a0af6d1c566d6ef952bf9" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 886189255dfffff<br>         <b>Hotspot Score:</b> 0.318<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 14<br>         <b>Avg Impact:</b> 42.71<br>         <b>Avg Duration:</b> 19549.14 min<br>         <b>Closure Rate:</b> 0.0         </div>`)[0];
+                popup_20285019b93dc31fa6258e152a70088a.setContent(html_ec777110b76a0af6d1c566d6ef952bf9);
+            
+        
+
+        polygon_efc1ae7435d60663ec474da9455647a0.bindPopup(popup_20285019b93dc31fa6258e152a70088a)
+        ;
+
+        
+    
+    
+            var polygon_bc767d50ef58b73649bb29be1fe51fbd = L.polygon(
+                [[12.953219151037112, 77.68268908201176], [12.958209562958563, 77.68277449008042], [12.96072077317251, 77.67860086906154], [12.958241644628018, 77.67434210853314], [12.953251465574391, 77.67425684498775], [12.950740182195165, 77.67843019745322]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_4dea57e1eea32a0397e4217436a0a05d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a27fb4afc78f7d5e10056641d45bd509 = $(`<div id="html_a27fb4afc78f7d5e10056641d45bd509" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892567fffff<br>         <b>Hotspot Score:</b> 0.317<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 5<br>         <b>Avg Impact:</b> 42.4<br>         <b>Avg Duration:</b> 31618.27 min<br>         <b>Closure Rate:</b> 0.2         </div>`)[0];
+                popup_4dea57e1eea32a0397e4217436a0a05d.setContent(html_a27fb4afc78f7d5e10056641d45bd509);
+            
+        
+
+        polygon_bc767d50ef58b73649bb29be1fe51fbd.bindPopup(popup_4dea57e1eea32a0397e4217436a0a05d)
+        ;
+
+        
+    
+    
+            var polygon_c229d426e2a147a783a80ada5fe7deef = L.polygon(
+                [[12.908539074041682, 77.62292065627224], [12.913528154112772, 77.62300502786228], [12.916038790123904, 77.61883431906658], [12.913560419331072, 77.61457950755329], [12.908571572761634, 77.61449528028011], [12.906060863481166, 77.61866572020912]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_3d17a59915c0100b0686421012212cc2 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_792d2e44551e8112d285ab455fca5aec = $(`<div id="html_792d2e44551e8112d285ab455fca5aec" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892435fffff<br>         <b>Hotspot Score:</b> 0.317<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 1<br>         <b>Avg Impact:</b> 34.0<br>         <b>Avg Duration:</b> 35287.82 min<br>         <b>Closure Rate:</b> 1.0         </div>`)[0];
+                popup_3d17a59915c0100b0686421012212cc2.setContent(html_792d2e44551e8112d285ab455fca5aec);
+            
+        
+
+        polygon_c229d426e2a147a783a80ada5fe7deef.bindPopup(popup_3d17a59915c0100b0686421012212cc2)
+        ;
+
+        
+    
+    
+            var polygon_19b33c043cc8ccda6b9d7d26c708bb1c = L.polygon(
+                [[12.998191800161353, 77.66659157531417], [13.003181439942923, 77.66667671989386], [13.005690941173075, 77.66250311074502], [13.003210876196201, 77.65824462575966], [12.998221469407353, 77.65815962570115], [12.995711894600392, 77.66233296611257]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a48181dcdbfb2b1ba279953a04670fbd = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_872ae00ea09d4406f88a37c182c32969 = $(`<div id="html_872ae00ea09d4406f88a37c182c32969" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8861892eedfffff<br>         <b>Hotspot Score:</b> 0.316<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 21<br>         <b>Avg Impact:</b> 40.95<br>         <b>Avg Duration:</b> 4119.9 min<br>         <b>Closure Rate:</b> 0.05         </div>`)[0];
+                popup_a48181dcdbfb2b1ba279953a04670fbd.setContent(html_872ae00ea09d4406f88a37c182c32969);
+            
+        
+
+        polygon_19b33c043cc8ccda6b9d7d26c708bb1c.bindPopup(popup_a48181dcdbfb2b1ba279953a04670fbd)
+        ;
+
+        
+    
+    
+            var polygon_eeace2553470834dfeba0aae21324777 = L.polygon(
+                [[13.073234425143692, 77.60041836915696], [13.078221675128988, 77.60050240021037], [13.080727130646403, 77.59633033294632], [13.078245410705286, 77.59207450393562], [13.073258394311326, 77.59199061729116], [13.070752864264925, 77.59616241525423]],
+                {"bubblingMouseEvents": true, "color": "#fee08b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee08b", "fillOpacity": 0.35, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1}
+            ).addTo(map_3db33bc5421376bc2593c419760a6a35);
+        
+    
+        var popup_a3808cdddc1e2c79cec77e05768d96ee = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_328abe687af91835da63842ab37978d4 = $(`<div id="html_328abe687af91835da63842ab37978d4" style="width: 100.0%; height: 100.0%;">         <b>H3 Cell:</b> 8860169649fffff<br>         <b>Hotspot Score:</b> 0.315<br>         <b>Hotspot Level:</b> Medium<br>         <b>Event Count:</b> 22<br>         <b>Avg Impact:</b> 40.91<br>         <b>Avg Duration:</b> 46.92 min<br>         <b>Closure Rate:</b> 0.05         </div>`)[0];
+                popup_a3808cdddc1e2c79cec77e05768d96ee.setContent(html_328abe687af91835da63842ab37978d4);
+            
+        
+
+        polygon_eeace2553470834dfeba0aae21324777.bindPopup(popup_a3808cdddc1e2c79cec77e05768d96ee)
+        ;
+
+        
+    
+</script>
+</html>
