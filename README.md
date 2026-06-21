@@ -255,8 +255,7 @@ astram-congestion-app/
 git clone https://github.com/Bhupanimounika22/astram-congestion-app.git
 cd astram-congestion-app
 ```
-
-Replace `YOUR_USERNAME` with your GitHub username.
+ 
 
 ---
 
