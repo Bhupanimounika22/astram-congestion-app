@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+joblib
+folium
+h3 
+branca
+catboost
+streamlit
+streamlit_folium
+pyarrow
